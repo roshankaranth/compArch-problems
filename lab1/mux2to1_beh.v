@@ -8,5 +8,5 @@ module mux2to1_beh(a,b,s,f);
 		if (s==1) f = a;
 		else f = b;
 
-endmoudle
+endmodule
 
