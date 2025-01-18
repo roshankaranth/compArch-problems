@@ -7,6 +7,8 @@ module testbench;
 	mux2to1_gate mux_gate (a,b,s,f);
 	initial
 		begin
+			$dumpfile("mux2to1_gate.vcd");
+			$dumpvars;
 			$monitor("%0t a=%b, b=%b, s=%b, f=%b", $time, a, b, s, f);
 			
 			#0 a=1'b0;b=1'b1;
